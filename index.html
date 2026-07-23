@@ -4,120 +4,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OG OUTFIT - Premium Fashion</title>
+  <title>OG OUTFIT - Premium Fashion Store</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .nav-link { transition: all 0.3s; }
+    .nav-link:hover { color: #000; transform: translateY(-2px); }
+    .product-card { transition: all 0.3s; }
+    .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-sans">
 
-  <div class="bg-black text-white text-center py-2 text-sm">
-    সারা বাংলাদেশে হোম ডেলিভারি | COD Available
+  <!-- Top Bar -->
+  <div class="bg-black text-white py-2 text-center text-sm">
+    সারা বাংলাদেশে হোম ডেলিভারি • COD Available • Online & Offline Store
   </div>
 
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="text-3xl font-bold">OG OUTFIT</div>
-      <a href="https://wa.me/8801312281209" target="_blank" 
-         class="bg-green-500 text-white px-6 py-3 rounded-full flex items-center gap-2">
-        <i class="fab fa-whatsapp"></i> Order Now
-      </a>
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <!-- Logo Placeholder -->
+      <div id="logo-placeholder" class="text-3xl font-bold text-black">
+        <!-- এখানে আপনার লোগো যোগ করুন -->
+        <span class="text-4xl">OG</span> OUTFIT
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-lg font-medium">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/8801312281209" target="_blank" 
+           class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium">
+          <i class="fab fa-whatsapp text-xl"></i> Order Now
+        </a>
+      </div>
     </div>
   </header>
 
-  <section class="bg-gradient-to-r from-black to-gray-900 text-white py-28 text-center">
-    <h1 class="text-6xl font-bold">Style That Defines You</h1>
+  <!-- Hero Banner Placeholder -->
+  <section class="bg-gray-900 text-white py-24 text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">STYLE THAT DEFINES YOU</h1>
+      <p class="text-2xl mb-10">Premium Fashion Collection</p>
+      <!-- ব্যানার ইমেজ যোগ করুন -->
+      <div class="bg-gray-800 h-96 flex items-center justify-center rounded-3xl text-3xl font-light">
+        ব্যানার ইমেজ এখানে যোগ করুন (Hero Banner)
+      </div>
+    </div>
   </section>
 
-  <section id="shop" class="py-20">
+  <!-- Shop Section -->
+  <section id="shop" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-10">Our Products</h2>
-      <div id="products-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+      <h2 class="text-4xl font-bold text-center mb-4">Our Products</h2>
+      <p class="text-center text-gray-600 mb-12">এখানে আপনি প্রোডাক্ট যোগ করবেন</p>
+      
+      <div id="products-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- আপনার প্রোডাক্টগুলো এখানে দেখাবে -->
+      </div>
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-    <div class="bg-white max-w-3xl w-full rounded-3xl overflow-hidden">
-      <div id="modal-content" class="p-8"></div>
+  <!-- Categories -->
+  <section id="categories" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Shop by Category</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-10 rounded-3xl text-center shadow hover:shadow-xl cursor-pointer">T-Shirts & Polo</div>
+        <div class="bg-white p-10 rounded-3xl text-center shadow hover:shadow-xl cursor-pointer">Jeans & Pants</div>
+        <div class="bg-white p-10 rounded-3xl text-center shadow hover:shadow-xl cursor-pointer">Hoodies & Jackets</div>
+        <div class="bg-white p-10 rounded-3xl text-center shadow hover:shadow-xl cursor-pointer">Panjabi & Ethnic</div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- About & Shop Info -->
+  <section id="about" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <div>
+        <h2 class="text-4xl font-bold mb-8">About OG OUTFIT</h2>
+        <p class="text-lg text-gray-600">We provide premium quality fashion with the best customer service.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-xl mb-6">Our Shop</h3>
+        <p><strong>Address:</strong> পাঁচ রাস্তার মোড়, সরদারপাড়া, নিউ কলেজ রোড, জামালপুর সদর, জামালপুর</p>
+        <p class="mt-4"><strong>WhatsApp:</strong> +880 1312-281209</p>
+        <p><strong>Mobile:</strong> +880 1410-080724</p>
+        <p class="mt-4"><strong>Email:</strong> og.outfitbd@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social & Contact -->
+  <section id="contact" class="py-16 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10">Follow Us</h2>
+      <div class="flex justify-center gap-8 text-4xl">
+        <a href="https://www.facebook.com/share/1Bq6NxJdF9/" target="_blank" class="hover:text-gray-400">📘</a>
+        <a href="#" target="_blank" class="hover:text-gray-400">🎵 TikTok @og.outfit7</a>
+        <a href="#" target="_blank" class="hover:text-gray-400">📺 YouTube OG Outfit</a>
+      </div>
+      <div class="mt-12 text-sm opacity-75">
+        Map: <a href="https://maps.app.goo.gl/J5ymXLzej5Dy2ZU86" class="underline">Google Map</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-8 text-center text-sm">
+    © 2026 OG OUTFIT. All Rights Reserved.
+  </footer>
 
   <script>
-    let products = [ {
-    id: 1,
-    name: "Black Oversized T-Shirt",
-    price: "200000000",
-    images: ["https://example.com/black-tshirt1.jpg", "https://example.com/black-tshirt2.jpg"],
-    sizes: ["S", "M", "L", "XL"],
-    description: "Premium quality soft cotton oversized t-shirt. Very comfortable for daily wear."
-  },
-      // === এখান থেকে নতুন প্রোডাক্ট যোগ করবেন ===
+    // প্রোডাক্ট যোগ করার জায়গা
+    let products = [
+      // এখানে আপনি প্রোডাক্ট যোগ করবেন (উদাহরণ নিচে আছে)
     ];
 
+    // প্রোডাক্ট রেন্ডার (আপনি পরে এড করবেন)
     function renderProducts() {
       const container = document.getElementById('products-container');
-      container.innerHTML = '';
-
       if (products.length === 0) {
-        container.innerHTML = `<p class="col-span-full text-center py-20 text-gray-500">No products added yet. Add below.</p>`;
-        return;
+        container.innerHTML = `<div class="col-span-full text-center py-20 text-gray-400 text-xl">প্রোডাক্ট যোগ করুন এখানে...</div>`;
       }
-
-      products.forEach(product => {
-        const card = document.createElement('div');
-        card.className = "bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl cursor-pointer";
-        card.innerHTML = `
-          <img src="${product.images[0]}" class="w-full h-64 object-cover">
-          <div class="p-6">
-            <h3 class="font-semibold text-lg">${product.name}</h3>
-            <p class="text-2xl font-bold mt-2">৳ ${product.price}</p>
-            <button onclick="viewProduct(${product.id}); event.stopImmediatePropagation()" 
-              class="mt-5 w-full bg-black text-white py-4 rounded-2xl">View Details</button>
-          </div>
-        `;
-        card.onclick = () => viewProduct(product.id);
-        container.appendChild(card);
-      });
     }
 
-    function viewProduct(id) {
-      const product = products.find(p => p.id === id);
-      if (!product) return;
-
-      const sizesHTML = product.sizes ? 
-        `<p class="mt-4"><strong>Available Sizes:</strong> ${product.sizes.join(', ')}</p>` : '';
-
-      let imagesHTML = product.images.map(img => 
-        `<img src="${img}" class="w-full h-80 object-cover rounded-2xl mb-4">`
-      ).join('');
-
-      document.getElementById('modal-content').innerHTML = `
-        <button onclick="closeModal()" class="float-right text-4xl">×</button>
-        ${imagesHTML}
-        <h2 class="text-3xl font-bold">${product.name}</h2>
-        <p class="text-4xl font-bold mt-3">৳ ${product.price}</p>
-        ${sizesHTML}
-        <p class="mt-6 text-gray-600">${product.description}</p>
-        <button onclick="orderOnWhatsApp('${product.name}')" 
-          class="mt-8 w-full bg-green-500 hover:bg-green-600 text-white py-5 rounded-2xl text-xl font-semibold">
-          Order via WhatsApp
-        </button>
-      `;
-      document.getElementById('modal').classList.remove('hidden');
-    }
-
-    function closeModal() {
-      document.getElementById('modal').classList.add('hidden');
-    }
-
-    function orderOnWhatsApp(name) {
-      const text = `Hello, I want to buy: ${name}`;
-      window.open(`https://wa.me/8801312281209?text=${encodeURIComponent(text)}`, '_blank');
-      closeModal();
-    }
-
-    // Initial render
     renderProducts();
   </script>
 </body>
-</html>
+</hরবেন
