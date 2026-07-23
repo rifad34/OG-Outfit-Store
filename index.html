@@ -118,15 +118,18 @@
 
   <script>
     let products = [
-      // === এখানে আপনি যত ইচ্ছা প্রোডাক্ট যোগ করতে পারবেন ===
-      // উদাহরণ:
-      // {
-      //   id: 1,
-      //   name: "Premium Black T-Shirt",
-      //   price: "1499",
-      //   image: "https://your-image-link.jpg"
-      // }
-    ];
+  {
+    id: 1,
+    name: "Black Oversized T-Shirt",
+    price: "1499",
+    images: [
+      "https://i.imgur.com/black1.jpg",
+      "https://i.imgur.com/black2.jpg",
+      "https://i.imgur.com/black3.jpg"
+    ],
+    description: "Very comfortable premium cotton t-shirt. Perfect daily wear."
+  },
+    
 
     function renderProducts() {
       const container = document.getElementById('products-container');
